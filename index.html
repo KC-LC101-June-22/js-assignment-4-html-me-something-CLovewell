@@ -1,8 +1,86 @@
 <!DOCTYPE html>
 <html>
    <head>
+      <title>The Golden Ratio</title>
+      <!--
+         <script src="https://fred-wang.github.io/TeXZilla/TeXZilla-min.js"></script>
+    <script src="https://fred-wang.github.io/TeXZilla/examples/customElement.js"></script>
+      -->
+    <script src="https://fred-wang.github.io/mathml.css/mspace.js"></script>
+
    </head>
    <body>
-      <!-- Write your HTML in this file! -->
+      <p>Of all the important constants of mathematics, two of the most famous and most useful 
+         are the circle constant &pi;, and the base of the natural logarithm, i.e. Euler's number <i>e</i>.
+         A third, slightly lesser known constant (and my personal favorite number) is the golden ratio.
+         I will attempt in what follows to provide an intriguing and enlightening discussion of this number,
+         including how to calculate it, several of its important properties, and how it might naturally
+         arise.</p>
+      <p>The name "golden ratio" comes from the number's role in aesthetics. The popular contention to make
+         upon introducing the golden ratio is that
+         this number is somehow optimal as an aspect ratio. 
+         That is, if you are an artist and you are making something rectangular, and you must decide how many
+         times longer the length is than the width, then you should make the length exactly "the golden
+         ratio times longer" in order to maximize the perceived visual pleasantness of your work.
+         </p>
+         <p>
+         What exactly "optimal" or "visual pleasantness" means here is at first unclear;
+         obviously different conditions and different tastes will call for different aspect ratios. But there
+         is a rigorous and simple mathematical proof that shows that the golden ratio has a certain property
+         that no other number has, and which property is undeniably aesthetically pleasing.
+      </p>
+      <p>
+         Suppose we draw a rectangle whose length-to-width ratio is some number 
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>&phi;</mi> <mo>></mo> <mn>1</mn>
+         </math>. 
+         Since we are only interested in their ratio and not the actual values of the width and length,
+         we can decide to make the width equal to 1. Then the length is equal to 
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>&phi;</mi>
+         </math>. Make a cut
+         (or "section") along the width of this rectangle, so that the portion cut off to the left side
+         forms a square. Then we must have cut at a distance 1 from the left side of the rectangle. This 
+         means the remaining width is 
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>&phi;</mi> <mo>-</mo> <mn>1</mn>
+         </math>. See that new, smaller rectangle to the right of the square? 
+         Wouldn't it be neat if the ratio of its length and width was <em>also</em> equal to 
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>&phi;</mi>
+         </math>?
+      </p>
+      <img src="./images/golden_ratio.jpg" alt="A demonstration of the golden ratio">
+      <p>
+         We can see clearly that the length of the small rectangle is 1 and its width is 
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>&phi;</mi> <mo>-</mo> <mn>1</mn>
+         </math>. In order
+         for the two rectangles to have the same relative dimensions, &phi; must satisfy the equation
+      </p>
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+         <mi>&phi;</mi> <mo>=</mo>
+         <mfrac>
+            <mn>
+               1
+            </mn>
+            <mi>&phi;</mi> <mo>-</mo> <mn>1</mn>
+         </mfrac>
+         .
+      </math>  
+      <p>
+         There is a unique positive number 
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>&phi;</mi>
+         </math> that satisfies this equation. We can find that number
+         with a little algebra. You may notice that after multiplying both sides by 
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>&phi;</mi> <mo>-</mo> <mn>1</mn>
+         </math> the equation
+         is quadratic. Thus the quadratic formula is the most advanced tool we need to find 
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>&phi;</mi>
+         </math>.
+      </p>
    </body>
 </html>
