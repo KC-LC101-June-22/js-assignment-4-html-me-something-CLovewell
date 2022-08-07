@@ -3,6 +3,7 @@
 
 <head>
    <title>The Golden Ratio</title>
+   <link rel="stylesheet" type="text/css" href="styles.css">
    <!--
          <script src="https://fred-wang.github.io/TeXZilla/TeXZilla-min.js"></script>
     <script src="https://fred-wang.github.io/TeXZilla/examples/customElement.js"></script>
@@ -13,7 +14,7 @@
 
 <body>
    <header>
-      <h1>
+      <h1 id="mainHeading">
          The Golden Ratio
       </h1>
    </header>
@@ -32,9 +33,8 @@
                   <mi>e</mi>.
                </math>
                A third, slightly lesser known constant (and my personal favorite number) is the golden ratio.
-               I will attempt in what follows to provide an intriguing and enlightening discussion of this number,
-               including how to calculate it, several of its important properties, and how it might naturally
-               arise.
+               I will attempt in what follows to provide a basic introduction to the golden ratio
+               from the perspective of aesthetics.
             </p>
          </section>
          <section>
@@ -87,8 +87,10 @@
                <math xmlns="http://www.w3.org/1998/Math/MathML">
                   <mi>&phi;</mi>?
                </math>
+               <br>
+               <img src="./images/golden-ratio.jpg" alt="A demonstration of the golden ratio">
             </p>
-            <img src="./images/golden-ratio.jpg" alt="A demonstration of the golden ratio">
+            
             <p>
                We can see clearly that the length of the small rectangle is 1 and its width is
                <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -182,7 +184,7 @@
                   </mfrac>.
                </math>
             </p>
-            <p>
+            <p id="testP" class="funParagraph">
                And there we have it! We found the value of the golden ratio, and the only calculation
                necessary was the solution of a quadratic equation. This makes
                <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -226,7 +228,7 @@
             <h2>
                The logarithmic spiral
             </h2>
-            <p>
+            <p id="logarithmic-spiral-description">
                Remember the property we used to define
                <math xmlns="http://www.w3.org/1998/Math/MathML">
                   <mi>&phi;</mi>?
@@ -245,14 +247,20 @@
                cut again, and again, and again...the golden ratio's precise value allows us to, in theory, keep
                making these cuts <em>ad infinitum</em>. This process gives rise to the famous logarithmic spiral
                image.
+               <img class="illustration" src="./images/logarithmic-spiral.jpg" alt="a logarithmic spiral">
             </p>
-            <img src="./images/logarithmic-spiral.jpg" alt="a logarithmic spiral">
+
             <p>
                Compare this to the spiral you may have seen on aircraft engines.
+               <img class="illustration" src="./images/aircraft-engine-spiral.jpg"
+                  alt="logarithmic spiral on aircraft engine">
             </p>
-            <img src="./images/aircraft-engine-spiral.jpg" alt="logarithmic spiral on aircraft engine">
+
             <p>
-               It's the same basic structure. In general, a logarithmic spiral is any spiral that fans out
+               It's the same basic structure,
+               although we see an opposite orientation on the aircraft engine
+               (fanning out as we move clockwise rather than counterclockwise).
+               In general, a logarithmic spiral is any spiral that fans out
                exponentially as it is spun around. In terms of polar coordinates, a logarithmic spiral is given
                by an equation of the form &nbsp;
                <math xmlns="http://www.w3.org/1998/Math/MathML">
