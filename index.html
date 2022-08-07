@@ -1,8 +1,308 @@
 <!DOCTYPE html>
 <html>
-   <head>
-   </head>
-   <body>
-      <!-- Write your HTML in this file! -->
-   </body>
+
+<head>
+   <title>The Golden Ratio</title>
+   <link rel="stylesheet" type="text/css" href="styles.css">
+   <!--
+         <script src="https://fred-wang.github.io/TeXZilla/TeXZilla-min.js"></script>
+    <script src="https://fred-wang.github.io/TeXZilla/examples/customElement.js"></script>
+      -->
+   <script src="https://fred-wang.github.io/mathml.css/mspace.js"></script>
+
+</head>
+
+<body>
+   <header>
+      <h1 id="mainHeading">
+         The Golden Ratio
+      </h1>
+   </header>
+   <main>
+      <article>
+         <section>
+            <h2>
+               Introduction
+            </h2>
+            <p>Of all the important constants of mathematics, two of the most famous and most useful
+               are the circle constant
+               <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>&pi;</mi>,
+               </math> and the base of the natural logarithm, i.e. Euler's number
+               <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>e</mi>.
+               </math>
+               A third, slightly lesser known constant (and my personal favorite number) is the golden ratio.
+               I will attempt in what follows to provide a basic introduction to the golden ratio
+               from the perspective of aesthetics.
+            </p>
+         </section>
+         <section>
+            <h2>
+               Why is it called the golden ratio?
+            </h2>
+            <p>The name "golden ratio" comes from the number's role in aesthetics. The popular contention to make
+               upon introducing the golden ratio is that
+               this number is somehow optimal as an aspect ratio.
+               That is, if you are an artist and you are making something rectangular, and you must decide how many
+               times longer the length is than the width, then you should make the length exactly "the golden
+               ratio times longer" in order to maximize the perceived visual pleasantness of your work.
+            </p>
+            <p>
+               What exactly "optimal" or "visual pleasantness" means here is at first unclear;
+               obviously different conditions and different tastes will call for different aspect ratios. But there
+               is a rigorous and simple mathematical proof that shows that the golden ratio has a certain property
+               that no other number has, and which property is undeniably aesthetically pleasing.
+            </p>
+         </section>
+         <section>
+            <h2>
+               Calculating the golden ratio
+            </h2>
+            <p>
+               Suppose we draw a rectangle whose length-to-width ratio is some number
+               <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>&phi;</mi>
+                  <mo>></mo>
+                  <mn>1</mn>.
+               </math>
+               (Note: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>&phi;</mi>
+               </math> is the conventional
+               notation for the golden ratio).
+               Since we are only interested in their ratio and not the actual values of the width and length,
+               we can decide to make the width equal to 1. Then the length is equal to
+               <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>&phi;</mi>.
+               </math> Make a cut
+               (or "section") along the width of this rectangle, so that the portion cut off to the left side
+               forms a square. Then we must have cut at a distance 1 from the left side of the rectangle. This
+               means the remaining length is
+               <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>&phi;</mi>
+                  <mo>-</mo>
+                  <mn>1</mn>.
+               </math> See that new, smaller rectangle to the right of the square?
+               Wouldn't it be neat if the ratio of its length and width was <em>also</em> equal to
+               <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>&phi;</mi>?
+               </math>
+               <br>
+               <img src="./images/golden-ratio.jpg" alt="A demonstration of the golden ratio">
+            </p>
+            
+            <p>
+               We can see clearly that the length of the small rectangle is 1 and its width is
+               <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>&phi;</mi>
+                  <mo>-</mo>
+                  <mn>1</mn>
+               </math>. In order
+               for the two rectangles to have the same relative dimensions,
+               <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>&phi;</mi>
+               </math> must satisfy the equation
+            </p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+               <mi>&phi;</mi>
+               <mo>=</mo>
+               <mfrac>
+                  <mn>
+                     1
+                  </mn>
+                  <mi>&phi;</mi>
+                  <mo>-</mo>
+                  <mn>1</mn>
+               </mfrac>
+               .
+            </math>
+            <p>
+               There is a unique positive number
+               <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>&phi;</mi>
+               </math> that satisfies this equation. We can find that number
+               with a little algebra. You may notice that after multiplying both sides by
+               <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>&phi;</mi>
+                  <mo>-</mo>
+                  <mn>1</mn>
+               </math> the equation
+               is quadratic. Thus the quadratic formula is the most advanced tool we need to find
+               <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>&phi;</mi>.
+               </math>
+            </p>
+            <p>
+               The quadratic equation we must solve is
+               <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                  <msup>
+                     <mi>&phi;</mi>
+                     <mn>2</mn>
+                  </msup>
+                  <mo>-</mo>
+                  <mi>&phi;</mi>
+                  <mo>-</mo>
+                  <mn>1</mn>
+                  <mo>=</mo>
+                  <mn>0</mn>.
+               </math>
+               Apply the quadratic formula to find that
+               <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                  <mi>&phi;</mi>
+                  <mo>=</mo>
+                  <mfrac>
+                     <mrow>
+                        <mn>1</mn>
+                        <mi>&pm;</mi>
+                        <msqrt>5</msqrt>
+                     </mrow>
+                     <mn>2</mn>
+                  </mfrac>.
+               </math>
+               Since <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>&phi;</mi>
+               </math> is a ratio of positive
+               quantities, <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>&phi;</mi>
+               </math> must itself be positive.
+               Now since <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <msqrt>5</msqrt>
+                  <mo>></mo>
+                  <mn>1</mn>,
+               </math>
+               this means we must set
+               <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                  <mi>&phi;</mi>
+                  <mo>=</mo>
+                  <mfrac>
+                     <mrow>
+                        <mn>1</mn>
+                        <mo>+</mo>
+                        <msqrt>5</msqrt>
+                     </mrow>
+                     <mn>2</mn>
+                  </mfrac>.
+               </math>
+            </p>
+            <p id="testP" class="funParagraph">
+               And there we have it! We found the value of the golden ratio, and the only calculation
+               necessary was the solution of a quadratic equation. This makes
+               <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>&phi;</mi>
+               </math>
+               easier to calculate than either
+               <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>&pi;</mi>
+               </math>
+               or
+               <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>e</mi>,
+               </math>
+               because neither
+               <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>&pi;</mi>
+               </math>
+               nor
+               <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>e</mi>
+               </math>
+               is the root of any polynomial equation with integer coefficients. Our word for this in math
+               is <em>transcendental</em>. Thus
+               <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>&pi;</mi>
+               </math>
+               and<math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>e</mi>
+               </math>
+               are transcendental numbers: they cannot be expressed as roots of some polynomial equation
+               (with integer coefficients). On the other hand, we say that
+               <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>&phi;</mi>
+               </math>
+               is <em>algebraic</em>, because it can be expressed as a root of a polynomial equation. Every
+               real number is either algebraic or transcendental, and the algebraic ones tend to be easier
+               to study.
+            </p>
+         </section>
+         <section>
+            <h2>
+               The logarithmic spiral
+            </h2>
+            <p id="logarithmic-spiral-description">
+               Remember the property we used to define
+               <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>&phi;</mi>?
+               </math>
+               We said that a rectangle whose length-to-width ratio is exactly
+               <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>&phi;</mi>
+               </math>
+               can be cut into a square and another rectangle whose length-to-width ratio is again
+               exactly equal to
+               <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>&phi;</mi>.
+               </math>
+               This gives the cut rectangle a kind of self-similarity. We could make a similar cut in the smaller
+               rectangle to get a third, even smaller rectangle with the same relative dimensions. Then we could
+               cut again, and again, and again...the golden ratio's precise value allows us to, in theory, keep
+               making these cuts <em>ad infinitum</em>. This process gives rise to the famous logarithmic spiral
+               image.
+               <img class="illustration" src="./images/logarithmic-spiral.jpg" alt="a logarithmic spiral">
+            </p>
+
+            <p>
+               Compare this to the spiral you may have seen on aircraft engines.
+               <img class="illustration" src="./images/aircraft-engine-spiral.jpg"
+                  alt="logarithmic spiral on aircraft engine">
+            </p>
+
+            <p>
+               It's the same basic structure,
+               although we see an opposite orientation on the aircraft engine
+               (fanning out as we move clockwise rather than counterclockwise).
+               In general, a logarithmic spiral is any spiral that fans out
+               exponentially as it is spun around. In terms of polar coordinates, a logarithmic spiral is given
+               by an equation of the form &nbsp;
+               <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>r</mi>
+                  <mo>=</mo>
+                  <msup>
+                     <mi>b</mi>
+                     <mi>&theta;</mi>
+                  </msup>
+               </math>
+               &nbsp; where <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>b</mi>
+               </math>
+               can be any positive number other than 1. This is distinct from an Archimedean, or
+               arithmetic, spiral. An
+               Archimedean spiral fans out linearly as it is spun around. It is given by an equation of
+               the form &nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>r</mi>
+                  <mo>=</mo>
+                  <mi>k</mi>
+                  <mi>&theta;</mi>
+               </math> &nbsp;
+               for some nonzero number
+               <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>k</mi>.
+               </math>
+               The logarithmic spiral we described above is essentially
+               <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mi>r</mi>
+                  <mo>=</mo>
+                  <msup>
+                     <mi>&phi;</mi>
+                     <mi>&theta;</mi>
+                  </msup>
+               </math>.
+            </p>
+         </section>
+      </article>
+   </main>
+   <footer>
+      &copy; 2022 Carnahan Lovewell
+   </footer>
+</body>
+
 </html>
