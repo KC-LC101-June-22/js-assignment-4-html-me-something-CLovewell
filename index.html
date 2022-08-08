@@ -4,12 +4,8 @@
 <head>
    <title>The Golden Ratio</title>
    <link rel="stylesheet" type="text/css" href="styles.css">
-   <!--
-         <script src="https://fred-wang.github.io/TeXZilla/TeXZilla-min.js"></script>
-    <script src="https://fred-wang.github.io/TeXZilla/examples/customElement.js"></script>
-      -->
-   <!--<script src="https://fred-wang.github.io/mathml.css/mspace.js"></script>
-   -->
+   <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 </head>
 
@@ -28,10 +24,12 @@
             <P>Of all the important constants of mathematics, two of the most famous and most useful
                are the circle constant
                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                  <mi>&pi;</mi>,
+                  <mi>&pi;</mi>
+                  <mo>,</mo>
                </math> and the base of the natural logarithm, i.e. Euler's number
                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                  <mi>e</mi>.
+                  <mi>e</mi>
+                  <mo>.</mo>
                </math>
                A third, slightly lesser known constant (and my personal favorite number) is the golden ratio.
                I will attempt in what follows to provide a basic introduction to the golden ratio
@@ -65,7 +63,8 @@
                <math xmlns="http://www.w3.org/1998/Math/MathML">
                   <mi>&phi;</mi>
                   <mo>></mo>
-                  <mn>1</mn>.
+                  <mn>1</mn>
+                  <mo>.</mo>
                </math>
                (Note: <math xmlns="http://www.w3.org/1998/Math/MathML">
                   <mi>&phi;</mi>
@@ -74,7 +73,8 @@
                Since we are only interested in their ratio and not the actual values of the width and length,
                we can decide to make the width equal to 1. Then the length is equal to
                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                  <mi>&phi;</mi>.
+                  <mi>&phi;</mi>
+                  <mo>.</mo>
                </math> Make a cut
                (or "section") along the width of this rectangle, so that the portion cut off to the left side
                forms a square. Then we must have cut at a distance 1 from the left side of the rectangle. This
@@ -82,16 +82,17 @@
                <math xmlns="http://www.w3.org/1998/Math/MathML">
                   <mi>&phi;</mi>
                   <mo>-</mo>
-                  <mn>1</mn>.
+                  <mn>1</mn>
+                  <mo>.</mo>
                </math> See that new, smaller rectangle to the right of the square?
                Wouldn't it be neat if the ratio of its length and width was <em>also</em> equal to
                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                  <mi>&phi;</mi>?
-               </math>
+                  <mi>&phi;</mi>
+               </math>?
                <br>
                <img src="./images/golden-ratio.jpg" alt="A demonstration of the golden ratio">
             </P>
-            
+
             <P>
                We can see clearly that the length of the small rectangle is 1 and its width is
                <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -111,11 +112,13 @@
                   <mn>
                      1
                   </mn>
-                  <mi>&phi;</mi>
-                  <mo>-</mo>
-                  <mn>1</mn>
+                  <mrow>
+                     <mi>&phi;</mi>
+                     <mo>-</mo>
+                     <mn>1</mn>
+                  </mrow>
                </mfrac>
-               .
+               <mo>.</mo>
             </math>
             <P>
                There is a unique positive number
@@ -130,7 +133,8 @@
                </math> the equation
                is quadratic. Thus the quadratic formula is the most advanced tool we need to find
                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                  <mi>&phi;</mi>.
+                  <mi>&phi;</mi>
+                  <mo>.</mo>
                </math>
             </P>
             <P>
@@ -145,7 +149,8 @@
                   <mo>-</mo>
                   <mn>1</mn>
                   <mo>=</mo>
-                  <mn>0</mn>.
+                  <mn>0</mn>
+                  <mo>.</mo>
                </math>
                Apply the quadratic formula to find that
                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
@@ -155,10 +160,13 @@
                      <mrow>
                         <mn>1</mn>
                         <mi>&pm;</mi>
-                        <msqrt>5</msqrt>
+                        <msqrt>
+                           <mn>5</mn>
+                        </msqrt>
                      </mrow>
                      <mn>2</mn>
-                  </mfrac>.
+                  </mfrac>
+                  <mo>.</mo>
                </math>
                Since <math xmlns="http://www.w3.org/1998/Math/MathML">
                   <mi>&phi;</mi>
@@ -167,9 +175,12 @@
                   <mi>&phi;</mi>
                </math> must itself be positive.
                Now since <math xmlns="http://www.w3.org/1998/Math/MathML">
-                  <msqrt>5</msqrt>
+                  <msqrt>
+                     <mn>5</mn>
+                  </msqrt>
                   <mo>></mo>
-                  <mn>1</mn>,
+                  <mn>1</mn>
+                  <mo>,</mo>
                </math>
                this means we must set
                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
@@ -179,10 +190,13 @@
                      <mrow>
                         <mn>1</mn>
                         <mo>+</mo>
-                        <msqrt>5</msqrt>
+                        <msqrt>
+                           <mn>5</mn>
+                        </msqrt>
                      </mrow>
                      <mn>2</mn>
-                  </mfrac>.
+                  </mfrac>
+                  <mo>.</mo>
                </math>
             </P>
             <P id="testP" class="funParagraph">
@@ -197,7 +211,8 @@
                </math>
                or
                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                  <mi>e</mi>,
+                  <mi>e</mi>
+                  <mo>,</mo>
                </math>
                because neither
                <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -212,7 +227,7 @@
                <math xmlns="http://www.w3.org/1998/Math/MathML">
                   <mi>&pi;</mi>
                </math>
-               and<math xmlns="http://www.w3.org/1998/Math/MathML">
+               and <math xmlns="http://www.w3.org/1998/Math/MathML">
                   <mi>e</mi>
                </math>
                are transcendental numbers: they cannot be expressed as roots of some polynomial equation
@@ -232,8 +247,8 @@
             <P id="logarithmic-spiral-description">
                Remember the property we used to define
                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                  <mi>&phi;</mi>?
-               </math>
+                  <mi>&phi;</mi>
+               </math>?
                We said that a rectangle whose length-to-width ratio is exactly
                <math xmlns="http://www.w3.org/1998/Math/MathML">
                   <mi>&phi;</mi>
@@ -241,8 +256,8 @@
                can be cut into a square and another rectangle whose length-to-width ratio is again
                exactly equal to
                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                  <mi>&phi;</mi>.
-               </math>
+                  <mi>&phi;</mi>
+               </math>.
                This gives the cut rectangle a kind of self-similarity. We could make a similar cut in the smaller
                rectangle to get a third, even smaller rectangle with the same relative dimensions. Then we could
                cut again, and again, and again...the golden ratio's precise value allows us to, in theory, keep
@@ -286,7 +301,8 @@
                </math> &nbsp;
                for some nonzero number
                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                  <mi>k</mi>.
+                  <mi>k</mi>
+                  <mo>.</mo>
                </math>
                The logarithmic spiral we described above is essentially
                <math xmlns="http://www.w3.org/1998/Math/MathML">
